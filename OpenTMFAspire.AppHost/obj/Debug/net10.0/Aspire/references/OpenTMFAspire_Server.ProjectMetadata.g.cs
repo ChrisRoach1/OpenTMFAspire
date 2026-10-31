@@ -15,7 +15,7 @@ public class OpenTMFAspire_Server : global::Aspire.Hosting.IProjectMetadata
     /// <summary>
     /// The path to the OpenTMFAspire_Server project.
     /// </summary>
-    public string ProjectPath => """/Users/chrisroach/Documents/Projects/OpenTMFAspire/OpenTMFAspire.Server/OpenTMFAspire.Server.csproj""";
+    public string ProjectPath => """/home/roach/Documents/OpenTMFAspire/OpenTMFAspire.Server/OpenTMFAspire.Server.csproj""";
 
     /// <summary>
     /// Gets a value indicating whether building the project before running it should be suppressed.

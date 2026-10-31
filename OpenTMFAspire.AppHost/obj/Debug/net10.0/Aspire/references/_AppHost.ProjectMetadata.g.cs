@@ -17,5 +17,5 @@ public class OpenTMFAspire_AppHost
     /// <summary>
     /// The path to the Aspire Host project.
     /// </summary>
-    public static string ProjectPath => """/Users/chrisroach/Documents/Projects/OpenTMFAspire/OpenTMFAspire.AppHost""";
+    public static string ProjectPath => """/home/roach/Documents/OpenTMFAspire/OpenTMFAspire.AppHost""";
 }

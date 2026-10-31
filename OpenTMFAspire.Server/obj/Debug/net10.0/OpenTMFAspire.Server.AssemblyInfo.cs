@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpenTMFAspire.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d39a36a0560dc1cf541a84c3f0a1e800aeb4d87b")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenTMFAspire.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenTMFAspire.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

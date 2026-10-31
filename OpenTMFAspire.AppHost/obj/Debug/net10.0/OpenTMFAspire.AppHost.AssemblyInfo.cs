@@ -11,13 +11,13 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("36eb4041-3ec2-4853-9803-e1ce0890e3a2")]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "/Users/chrisroach/Documents/Projects/OpenTMFAspire/OpenTMFAspire.AppHost")]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "/home/roach/Documents/OpenTMFAspire/OpenTMFAspire.AppHost")]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "OpenTMFAspire.AppHost.csproj")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "/Users/chrisroach/Documents/Projects/OpenTMFAspire/OpenTMFAspire.AppHost/obj/")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "/home/roach/Documents/OpenTMFAspire/OpenTMFAspire.AppHost/obj/")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpenTMFAspire.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d39a36a0560dc1cf541a84c3f0a1e800aeb4d87b")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenTMFAspire.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenTMFAspire.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

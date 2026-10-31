@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTMFAspire.AppHost", "Op
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTMFAspire.Server", "OpenTMFAspire.Server\OpenTMFAspire.Server.csproj", "{321FB7E2-911A-4D77-8714-36662E622229}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTMFAspire.Business", "OpenTMFAspire.Business\OpenTMFAspire.Business.csproj", "{CA77FBD0-9543-413E-81C8-200FE1F04750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTMFAspire.Data", "OpenTMFAspire.Data\OpenTMFAspire.Data.csproj", "{1C051067-6BE4-49BA-B03B-0BDFF0AC1090}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{321FB7E2-911A-4D77-8714-36662E622229}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{321FB7E2-911A-4D77-8714-36662E622229}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{321FB7E2-911A-4D77-8714-36662E622229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA77FBD0-9543-413E-81C8-200FE1F04750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA77FBD0-9543-413E-81C8-200FE1F04750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA77FBD0-9543-413E-81C8-200FE1F04750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA77FBD0-9543-413E-81C8-200FE1F04750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C051067-6BE4-49BA-B03B-0BDFF0AC1090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C051067-6BE4-49BA-B03B-0BDFF0AC1090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C051067-6BE4-49BA-B03B-0BDFF0AC1090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C051067-6BE4-49BA-B03B-0BDFF0AC1090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,7 +1,20 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
+      "Dapper/2.1.89": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/10.0.12": {
         "type": "package",
         "dependencies": {
@@ -229,6 +242,19 @@
           }
         }
       },
+      "Npgsql/10.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "OpenTelemetry/1.17.0": {
         "type": "package",
         "dependencies": {
@@ -401,10 +427,45 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "OpenTMFAspire.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Dapper": "2.1.89",
+          "Npgsql": "10.0.3"
+        },
+        "compile": {
+          "bin/placeholder/OpenTMFAspire.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OpenTMFAspire.Data.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Dapper/2.1.89": {
+      "sha512": "1VjFE664wnxvuhlgP8kS4PeFFF4jqD3VkbIHW6Zlc52zuibgcz5ICnIHcQXlTp6pURpPNGLV0ZpNe5x9KePJnA==",
+      "type": "package",
+      "path": "dapper/2.1.89",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.89.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net10.0/Dapper.dll",
+        "lib/net10.0/Dapper.xml",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net8.0/Dapper.dll",
+        "lib/net8.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
+      ]
+    },
     "Microsoft.AspNetCore.OpenApi/10.0.12": {
       "sha512": "7RnQ/UKn+kK3JDLmTpW+vVqNErWthGPAVAy1aIiBzv4ucQ6g9NFvOJUuT0PHcpvcJxGVxctMxj6t+NESWMrgHQ==",
       "type": "package",
@@ -712,6 +773,25 @@
         "lib/netstandard2.0/Microsoft.OpenApi.xml",
         "microsoft.openapi.2.12.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
+      ]
+    },
+    "Npgsql/10.0.3": {
+      "sha512": "7nb5YzXuvWWJxB0J8DiyL3we+X4FOctZrt0fIBnucOIaIevFEEwGQVZKtiu9olXdlNAK1eNgqSral6r/jlhI4w==",
+      "type": "package",
+      "path": "npgsql/10.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Npgsql.dll",
+        "lib/net10.0/Npgsql.xml",
+        "lib/net8.0/Npgsql.dll",
+        "lib/net8.0/Npgsql.xml",
+        "lib/net9.0/Npgsql.dll",
+        "lib/net9.0/Npgsql.xml",
+        "npgsql.10.0.3.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
       ]
     },
     "OpenTelemetry/1.17.0": {
@@ -1028,6 +1108,11 @@
         "polly.ratelimiting.8.4.2.nupkg.sha512",
         "polly.ratelimiting.nuspec"
       ]
+    },
+    "OpenTMFAspire.Data/1.0.0": {
+      "type": "project",
+      "path": "../OpenTMFAspire.Data/OpenTMFAspire.Data.csproj",
+      "msbuildProject": "../OpenTMFAspire.Data/OpenTMFAspire.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1035,6 +1120,7 @@
       "Microsoft.AspNetCore.OpenApi >= 10.0.12",
       "Microsoft.Extensions.Http.Resilience >= 10.10.0",
       "Microsoft.Extensions.ServiceDiscovery >= 10.10.0",
+      "OpenTMFAspire.Data >= 1.0.0",
       "OpenTelemetry.Exporter.OpenTelemetryProtocol >= 1.17.0",
       "OpenTelemetry.Extensions.Hosting >= 1.17.0",
       "OpenTelemetry.Instrumentation.AspNetCore >= 1.17.0",
@@ -1043,31 +1129,35 @@
     ]
   },
   "packageFolders": {
-    "/Users/chrisroach/.nuget/packages/": {}
+    "/home/roach/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/chrisroach/Documents/Projects/OpenTMFAspire/OpenTMFAspire.Server/OpenTMFAspire.Server.csproj",
+      "projectUniqueName": "/home/roach/Documents/OpenTMFAspire/OpenTMFAspire.Server/OpenTMFAspire.Server.csproj",
       "projectName": "OpenTMFAspire.Server",
-      "projectPath": "/Users/chrisroach/Documents/Projects/OpenTMFAspire/OpenTMFAspire.Server/OpenTMFAspire.Server.csproj",
-      "packagesPath": "/Users/chrisroach/.nuget/packages/",
-      "outputPath": "/Users/chrisroach/Documents/Projects/OpenTMFAspire/OpenTMFAspire.Server/obj/",
+      "projectPath": "/home/roach/Documents/OpenTMFAspire/OpenTMFAspire.Server/OpenTMFAspire.Server.csproj",
+      "packagesPath": "/home/roach/.nuget/packages/",
+      "outputPath": "/home/roach/Documents/OpenTMFAspire/OpenTMFAspire.Server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/chrisroach/.nuget/NuGet/NuGet.Config"
+        "/home/roach/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/roach/Documents/OpenTMFAspire/OpenTMFAspire.Data/OpenTMFAspire.Data.csproj": {
+              "projectPath": "/home/roach/Documents/OpenTMFAspire/OpenTMFAspire.Data/OpenTMFAspire.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1080,10 +1170,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
@@ -1138,7 +1229,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.301/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/home/roach/.local/share/mise/dotnet-root/sdk/10.0.403/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
